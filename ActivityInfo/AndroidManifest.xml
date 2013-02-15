@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.actvinfo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:icon="@drawable/actv_info"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainTabFrame" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".tab.ActivityMapTab">
+        </activity>
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".tab.ActivityListTab">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".tab.CalendarTab">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".tab.ActivityIssueTab">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".tab.SettingTab">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>

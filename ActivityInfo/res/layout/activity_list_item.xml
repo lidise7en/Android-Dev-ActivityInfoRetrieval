@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@layout/item_bg"
+    android:cacheColorHint="#00FFFFFF"> 
+
+    <LinearLayout android:orientation="vertical" 
+        android:layout_width="100px" 
+        android:layout_height="wrap_content"> 
+	        
+        <ImageView android:id="@+id/img" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+        	android:layout_margin="5px"/>
+        
+        <TextView android:id="@+id/time" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000" 
+            android:textSize="18px" />
+        
+        <TextView android:id="@+id/location" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:textColor="#000000" 
+            android:textSize="18px"
+            android:padding="3dip" />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"> 
+
+        <TextView android:id="@+id/subject" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000" 
+            android:textSize="28px"
+            android:ellipsize="marquee"/> 
+            
+		<TextView android:id="@+id/speaker" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000" 
+            android:textSize="20px" />
+            
+        <TextView android:id="@+id/dscp" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000" 
+            android:textSize="20px"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+	</LinearLayout>
+</LinearLayout> 
